@@ -7,7 +7,7 @@ public class T3_array {
 		//ArrayList<Integer[]> vos = new ArrayList<>();  // ArrayList가 2차원 배열처럼 사용할 수 있음.
 		ArrayList<int[]> vos = new ArrayList<>();  // 에러 발생x  // vector linkedlist 같음 용도에 따라 다름  // dtos
 		
-		int[] jum1 = new int[4];  // 번호/국어/영어/수학 점수
+		int[] jum1 = new int[4];  // 번호/국어/영어/수학 점수   // 하나의 vo 모여서 vos  // 필드 정의 => vo 객체
 		jum1[0] = 1;
 		jum1[1] = 100;
 		jum1[2] = 90;
@@ -44,7 +44,7 @@ public class T3_array {
 		System.out.println("3.vos객체 안의 배열값 출력");
 		int[] imsi = new int[jum1.length];  // 배열은 length
 		for(int i=0; i<vos.size(); i++) {
-			imsi = vos.get(i);  // 행 // 배열로 넣음
+			imsi = vos.get(i);  // 행을 불러냄(record) // 배열로 넣음
 			for(int j=0; j<imsi.length; j++) {
 				System.out.print(imsi[j] + " ");  // 열
 			}
